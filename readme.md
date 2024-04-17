@@ -8,7 +8,7 @@ Our project automate the process of generating questions from text passages.Here
 ## Acces our training notebooks and models
 - Access our **Colab notebook** [here](https://colab.research.google.com/drive/1vn_BxUOoE6cgqK57jkEBYs-yXNtTWbcW?usp=sharing).
 - Acces our Question Generation Model on Hugging Face [here](https://huggingface.co/nadika/question_generation_final)
-- Training notebook on Kaggle [here](https://www.kaggle.com/code/mahimadhakal/questiongenerator?scriptVersionId=171923165)
+- Training notebook on Kaggle [End to End Generation] [here](https://www.kaggle.com/code/mahimadhakal/questiongenerator?scriptVersionId=171923165)
 
 ## View our Demo: 
 [![Demo Video](images/HLT_MCQ.png)](https://drive.google.com/file/d/1QcNoFwLogo3LUCtO4_3_o4CgRclAg6QP/view?usp=sharing)
