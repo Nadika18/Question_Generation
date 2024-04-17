@@ -20,7 +20,18 @@ Our project automate the process of generating questions from text passages.Here
 
 ## System diagram for MCQ generation workflow
 
-**Workflow steps:**
 <img src="images/MCQG_system_diagram.png" alt="MCQ Generation" width="700">
+
+## Outputs:
+### 1. Question Generation:
+<img src="images/QG_output2.png" alt="Question Generation" width="500">
+<img src="images/QG_output3.png" alt="Question Generation" width="500">
+
+
+### 2. MCQ Generation:
+
+<img src="images/MCQ_output1.png" alt="Question Generation" width="500">
+<img src="images/MCQ_output2.png" alt="Question Generation" width="500">
+
 
 
