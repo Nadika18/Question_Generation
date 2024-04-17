@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Question Form</title>
+
 </head>
+
 <body>
-    hello
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .output-container {
+            width: 80%;
+            text-align: center;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 16px);
+            box-sizing: border-box;
+            resize: vertical;
+            height: 100px;
+
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <div class="content-wrapper">
+        <div class="form-container">
+            <form action="/submit-question" method="POST">
+                {% csrf_token %}
+                <label for="question">Enter Your Text:</label>
+                <textarea type="text" id="text" name="text" required></textarea>
+                <button type="submit">Generate Question</button>
+            </form>
+        </div>
+        <div class="output-container">
+
+
+            {% if que %}
+
+            <h2>Generated Question:</h2>
+            <p>{{ que }}</p>
+
+            {% endif %}
+        </div>
+    </div>
 </body>
+
 </html>
