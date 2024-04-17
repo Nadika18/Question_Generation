@@ -1,7 +1,8 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-model_path = 'project/models'
+# model_path = 'project/models'
+model_path = 'mahima18/qat5'
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_path).to(torch.device('cuda' if torch.cuda.is_available() else 'cpu'))
 

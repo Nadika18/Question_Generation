@@ -28,10 +28,33 @@ Our project automate the process of generating questions from text passages.Here
 <img src="images/QG_output3.png" alt="Question Generation" width="500">
 
 
+
+
 ### 2. MCQ Generation:
 
 <img src="images/MCQ_output1.png" alt="Question Generation" width="500">
 <img src="images/MCQ_output2.png" alt="Question Generation" width="500">
 
 
+## Question Generation without Answers : End to End Generation
 
+
+
+ **TrainingArguments**   
+
+| Parameter                        | Value                  | 
+|----------------------------------|------------------------|
+| `evaluation_strategy`            | `epoch`                |  
+| `learning_rate`                  | `2e-5`                 | 
+| `per_device_train_batch_size`    | `8`                    | 
+| `per_device_eval_batch_size`     | `8`                    | 
+| `num_train_epochs`               | `3`                    | 
+| `weight_decay`                   | `0.01`                 | 
+| `save_strategy`                  | `epoch`                | 
+| `disable_tqdm`                   | `False`                | 
+| `gradient_accumulation_steps`    | `2`                    | 
+
+ Note : The batch size and acclumulation steps were decreased during training due to memory constraints.
+
+![alt text](images/e2e.png)
+![alt text](images/e2e2.png)
