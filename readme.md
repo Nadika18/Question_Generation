@@ -4,6 +4,7 @@
 Our project automate the process of generating questions from text passages.Here, we have finetuned T5-small model for question generation. and used the same finetuned model for MCQ generation.
 
 
+
 ## Acces our training notebooks and models
 - Access our **Colab notebook** [here](https://colab.research.google.com/drive/1vn_BxUOoE6cgqK57jkEBYs-yXNtTWbcW?usp=sharing).
 - Acces our Question Generation Model on Hugging Face [here](https://huggingface.co/nadika/question_generation_final)
@@ -12,7 +13,13 @@ Our project automate the process of generating questions from text passages.Here
 ## View our Demo: 
 [![Demo Video](images/HLT_MCQ.png)](https://drive.google.com/file/d/1QcNoFwLogo3LUCtO4_3_o4CgRclAg6QP/view?usp=sharing)
 
-
+## Run
+- Clone the repository : `git clone git@github.com:Nadika18/Question_Generation.git    `
+- Install the requirements : `pip install -r requirements.txt`
+- Run `python3 manage.py runserver` in the terminal
+- Open the browser and go to `http://localhost:8000/`
+- Submit the question at `/`
+- Get the generated question at `/submit-question`
 
 ## System diagram for finetuning T5-small model for Question Generation
 <img src="images/QG_system_diagram.png" alt="Question Generation" width="500">
