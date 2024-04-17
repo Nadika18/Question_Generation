@@ -8,6 +8,7 @@ Access our Colab notebook [here](https://colab.research.google.com/drive/1vn_BxU
 
 [![Demo Video](https://drive.google.com/file/d/1QcNoFwLogo3LUCtO4_3_o4CgRclAg6QP/view?usp=sharing)]
 
+Acces our Question Generation Model on Hugging Face [here](https://huggingface.co/nadika/question_generation_final)
 
 ## System diagram for finetuning T5-small model for Question Generation
 <img src="images/QG_system_diagram.png" alt="Question Generation" width="500">
